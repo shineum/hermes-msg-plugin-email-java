@@ -15,15 +15,15 @@ public class EmailMessageJOSerializer {
     public static JSONObject serialize(EmailMessage emailMessage) {
         try {
             JSONObject jo = new JSONObject();
-            jo.put(EmailMessage.EM_KEY_FROM, emailMessage.from);
-            jo.put(EmailMessage.EM_KEY_TO, emailMessage.to);
-            jo.put(EmailMessage.EM_KEY_CC, emailMessage.cc);
-            jo.put(EmailMessage.EM_KEY_BCC, emailMessage.bcc);
-            jo.put(EmailMessage.EM_KEY_SUBJECT, emailMessage.subject);
-            jo.put(EmailMessage.EM_KEY_BODY, emailMessage.body);
-            jo.put(EmailMessage.EM_KEY_IS_HTML, emailMessage.isHtml);
+            jo.put(EmailMessage.EM_KEY_FROM, emailMessage.getFrom());
+            jo.put(EmailMessage.EM_KEY_TO, emailMessage.getTo());
+            jo.put(EmailMessage.EM_KEY_CC, emailMessage.getCc());
+            jo.put(EmailMessage.EM_KEY_BCC, emailMessage.getBcc());
+            jo.put(EmailMessage.EM_KEY_SUBJECT, emailMessage.getSubject());
+            jo.put(EmailMessage.EM_KEY_BODY, emailMessage.getBody());
+            jo.put(EmailMessage.EM_KEY_IS_HTML, emailMessage.isHtml());
             JSONArray ja = new JSONArray();
-            Optional.ofNullable(emailMessage.attachments)
+            Optional.ofNullable(emailMessage.getAttachments())
                     .orElse(Collections.emptyList())
                     .forEach(e -> {
                         ja.put(ByteArrayAttachmentJOSerializer.serialize(e));
