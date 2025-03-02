@@ -30,13 +30,45 @@ public class EmailMessage {
     List<ByteArrayAttachment> attachments;
 
     public EmailMessage(EmailMessageBuilder emailMessageBuilder) {
-        this.from = emailMessageBuilder.from;
-        this.to = emailMessageBuilder.to;
-        this.cc = emailMessageBuilder.cc;
-        this.bcc = emailMessageBuilder.bcc;
-        this.subject = emailMessageBuilder.subject;
-        this.body = emailMessageBuilder.body;
-        this.isHtml = emailMessageBuilder.isHtml;
-        this.attachments = emailMessageBuilder.attachments;
+        this.from = emailMessageBuilder.getFrom();
+        this.to = emailMessageBuilder.getTo();
+        this.cc = emailMessageBuilder.getCc();
+        this.bcc = emailMessageBuilder.getBcc();
+        this.subject = emailMessageBuilder.getSubject();
+        this.body = emailMessageBuilder.getBody();
+        this.isHtml = emailMessageBuilder.isHtml();
+        this.attachments = emailMessageBuilder.getAttachments();
+    }
+
+    public String getFrom() {
+        return from;
+    }
+
+    public String getTo() {
+        return to;
+    }
+
+    public String getCc() {
+        return cc;
+    }
+
+    public String getBcc() {
+        return bcc;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public boolean isHtml() {
+        return isHtml;
+    }
+
+    public List<ByteArrayAttachment> getAttachments() {
+        return attachments;
     }
 }
