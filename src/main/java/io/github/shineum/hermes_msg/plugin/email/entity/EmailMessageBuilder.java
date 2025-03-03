@@ -1,6 +1,6 @@
-package hermesmsg.plugin.email.entity;
+package io.github.shineum.hermes_msg.plugin.email.entity;
 
-import hermesmsg.plugin.common.util.DataConverter;
+import io.github.shineum.hermes_msg.plugin.util.common.DataConverter;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

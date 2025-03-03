@@ -1,4 +1,4 @@
-package hermesmsg.plugin.email.entity;
+package io.github.shineum.hermes_msg.plugin.email.entity;
 
 import jakarta.activation.MimetypesFileTypeMap;
 import org.slf4j.Logger;
@@ -38,6 +38,10 @@ public class ByteArrayAttachment {
 
     public String getFilename() {
         return this.filename;
+    }
+
+    public byte[] getByteArrayData() {
+        return this.data;
     }
 
     public String getBase64Data() {

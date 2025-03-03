@@ -1,4 +1,4 @@
-package hermesmsg.plugin.common.util;
+package io.github.shineum.hermes_msg.plugin.util.common;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

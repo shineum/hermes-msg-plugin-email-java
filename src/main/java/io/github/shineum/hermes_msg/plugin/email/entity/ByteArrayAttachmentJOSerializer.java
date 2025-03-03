@@ -1,4 +1,4 @@
-package hermesmsg.plugin.email.entity;
+package io.github.shineum.hermes_msg.plugin.email.entity;
 
 import org.json.JSONObject;
 import org.slf4j.Logger;
