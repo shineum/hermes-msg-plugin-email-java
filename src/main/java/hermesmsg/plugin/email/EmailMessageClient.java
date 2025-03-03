@@ -10,5 +10,5 @@ public abstract class EmailMessageClient implements IMessageClient {
         return send(EmailMessageBuilder.fromMessageStr(msgStr));
     }
 
-    abstract MessageResult send(EmailMessage emailMessage);
+    public abstract MessageResult send(EmailMessage emailMessage);
 }
