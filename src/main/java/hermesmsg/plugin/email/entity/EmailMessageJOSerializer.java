@@ -1,4 +1,4 @@
-package hermesmsg.entity;
+package hermesmsg.plugin.email.entity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

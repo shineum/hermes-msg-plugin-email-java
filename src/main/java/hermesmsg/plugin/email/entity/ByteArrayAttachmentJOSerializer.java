@@ -1,4 +1,4 @@
-package hermesmsg.entity;
+package hermesmsg.plugin.email.entity;
 
 import org.json.JSONObject;
 import org.slf4j.Logger;

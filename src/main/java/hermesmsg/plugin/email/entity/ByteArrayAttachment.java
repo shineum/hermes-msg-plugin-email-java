@@ -1,4 +1,4 @@
-package hermesmsg.entity;
+package hermesmsg.plugin.email.entity;
 
 import jakarta.activation.MimetypesFileTypeMap;
 import org.slf4j.Logger;

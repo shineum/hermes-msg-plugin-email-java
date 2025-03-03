@@ -1,4 +1,4 @@
-package hermesmsg.entity;
+package hermesmsg.plugin.email.entity;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

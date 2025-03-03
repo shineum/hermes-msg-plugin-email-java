@@ -1,4 +1,4 @@
-package hermesmsg.util;
+package hermesmsg.plugin.common.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
